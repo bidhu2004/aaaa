@@ -1,0 +1,154 @@
+.about-section {
+    margin: 5% 5%;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-top {
+    display: flex;
+    gap: 4%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+  
+  .about-image {
+    flex: 1;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5vw;
+    color: #1f2f36;
+    margin-bottom: 1%;
+  }
+  
+  .about-text p {
+    font-size: 1.2vw;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  /* Team Section */
+  .team-section {
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  
+  .team-left {
+    flex: 1;
+  }
+  
+  .team-left h2 {
+    font-size: 2vw;
+    margin-bottom: 1%;
+    color: #1f2f36;
+  }
+  
+  .team-left p {
+    font-size: 1.1vw;
+    color: #555;
+  }
+  
+  .team-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+  }
+  
+  .team-member {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    margin-bottom: 2%;
+    background-color: #f9f9f9;
+    padding: 2%;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .team-img img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #5199ae;
+  }
+  
+  .team-info h3 {
+    margin: 0;
+    font-size: 1.3vw;
+    color: #333;
+  }
+  
+  .job-title {
+    font-size: 1vw;
+    font-weight: 500;
+    color: #777;
+  }
+  
+  .team-info p {
+    font-size: 1vw;
+    color: #555;
+  }
+  
+  /* Mobile Responsive */
+  @media screen and (max-width: 768px) {
+    .about-top {
+      flex-direction: column;
+    }
+  
+    .about-text h2 {
+      font-size: 6vw;
+    }
+  
+    .about-text p {
+      font-size: 4vw;
+    }
+  
+    .team-section {
+      flex-direction: column;
+    }
+  
+    .team-left h2 {
+      font-size: 6vw;
+    }
+  
+    .team-left p {
+      font-size: 4vw;
+    }
+  
+    .team-right {
+      width: 100%;
+    }
+  
+    .team-member {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .team-img img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .team-info h3 {
+      font-size: 5vw;
+    }
+  
+    .job-title,
+    .team-info p {
+      font-size: 4vw;
+    }
+  }
+  

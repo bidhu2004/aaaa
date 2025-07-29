@@ -1,0 +1,151 @@
+.contact-section {
+    padding: 5%;
+}
+
+.contact-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 3%;
+    flex-wrap: wrap;
+}
+
+.contact-form, .contact-image {
+    width: 48%;
+}
+.contact-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1%;
+}
+
+.contact-form p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 2%;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form button {
+    background-color: #5199ae;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #4a88b1;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    margin-top: 3%;
+}
+
+.location-image {
+    width: 48%;   
+}
+
+.location-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.contact-info {
+    width: 48%;
+    display: flex;    
+    flex-direction: column;   
+    margin-top: 3%;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 2%;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    font-size: 1.2rem;
+    color: #666;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.textarea-wrapper {
+    position: relative;
+}
+  
+.textarea-wrapper textarea {
+    padding-bottom: 1.8rem; /* Adds space so count doesn't overlap text */
+}
+#char-count {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+    font-size: 0.85rem;
+    color: #888;
+    pointer-events: none;
+}
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .contact-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-form, .contact-image {
+        width: 100%;
+    }
+    .contact-image{
+        margin-top: 5%;
+    }
+    .contact-bottom {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        width: 100%;           
+    }
+
+    .contact-info ul li {
+        font-size: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .location-image{
+        width: 100%;
+    }
+    .location-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 5px;
+    }
+}
